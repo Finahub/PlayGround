@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AirTableClient</string>
+    <string name="saveLocalData">Save this data</string>
+    <string name="bank">Bank</string>
+    <string name="credit_card_count">Credit card count</string>
+    <string name="debit_card_count">Debit card count</string>
+    <string name="airtable">AirTable</string>
+</resources>

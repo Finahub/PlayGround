@@ -1,0 +1,33 @@
+.centered {
+    position: fixed;
+    /* top: 20%; */
+    right: 65%;
+    /* transform: translate(-50%, -20%); */
+  }
+  .centered_btn {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    /* transform: translate(-50%, -20%); */
+  }
+  .squeeze{
+   right:65%
+  }
+  /* .mat-button.mat-blue {
+    color: blue;
+ }
+ 
+ .mat-raised-button.mat-blue, .mat-flat-button.mat-blue{
+    background-color: blue;
+    color: white;
+ } */
+
+ .tableBankInfo {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+  }
+  
+  .recordBankInfo {
+    height: 50px;
+  }

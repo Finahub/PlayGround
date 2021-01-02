@@ -1,0 +1,47 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>FinaHuB</span>
+  </mat-toolbar-row>
+</mat-toolbar>  
+
+
+
+<!-- <mat-card class="centered">
+  
+  <mat-card-actions>
+    <button  color="accent"  (click)="onButtonClick()">Click Me</button>
+  </mat-card-actions>
+</mat-card> -->
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h3 class="card-title">TO FETCH ALL THE BANKS </h3>  
+    <button mat-raised-button class="btn btn-success" color="accent"  (click)="onButtonClick()">Click Me</button>    
+  </div>
+</div>
+
+<br>
+
+
+
+<cdk-virtual-scroll-viewport
+  itemSize="0"
+  style="height: 300px;"
+>
+  <table style="width: 100%;">
+    <ng-container
+      *cdkVirtualFor="let row of rows"
+    >
+      <tr style="width:100%; min-height: 30px;">
+        <td>{{row.bankName}}</td>
+        <td>{{row.creditCardCount}}</td>
+        <td>{{row.debitCardCount}}</td>
+      </tr>
+      <button (click)=saveThisBankInfo(row)>
+        save</button>
+    </ng-container>
+  </table>
+</cdk-virtual-scroll-viewport>
+<br>
+
+
+<a href="http://localhost:8080/retrieveSavedBankInfo" target="_blank"><span class="badge rounded-pill bg-success">IN Memory DB</span></a>

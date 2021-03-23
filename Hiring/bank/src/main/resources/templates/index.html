@@ -1,0 +1,53 @@
+
+<html><head>
+<style type="text/css">
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h1 {text-align: center;}
+</style>
+</head>
+
+<h1>Bank Information</h1 >
+<form action="#" th:action="@{/savebankinfo}" th:object="${recordEntity}" method="post">
+<table>
+			<thead>
+				<tr>
+					<th>BANK NAME</th>
+					<th>CREDIT CARD COUNT</th>
+					<th>DEBIT CARD COUNT</th>
+					<th>CREATED ON</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td th:text="${recordEntity.fields.bank}"></td>
+					<input type ="hidden" id ="bank" th:field =${recordEntity.fields.bank}>
+					<td th:text="${recordEntity.fields.creditCardCount}"></td>
+					<input type ="hidden" id ="creditCardCount" th:field =${recordEntity.fields.creditCardCount}>
+					<td th:text="${recordEntity.fields.debitCardCount}"></td>
+					<input type ="hidden" id ="debitCardCount" th:field =${recordEntity.fields.debitCardCount}>
+					<td th:text="${recordEntity.createdTime}"></td>
+					<input type ="hidden" id ="createdTime" th:field =${recordEntity.createdTime}>
+					<input type ="hidden" id ="id" th:field =${recordEntity.id}>
+					
+				</tr>
+			</tbody>
+
+		</table>
+
+ <button type="submit">Submit</button>
+ </form>
+</html>

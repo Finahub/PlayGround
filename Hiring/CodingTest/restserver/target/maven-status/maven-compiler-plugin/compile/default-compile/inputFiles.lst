@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\airtable\Airtable.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\database\inter\DatabaseConnectionInterface.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\utils\DBConnection.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\controller\BankController.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\inter\BankOperationsInterface.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\database\dbimpl\H2DBConnection.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\airtable\AirtableConfiguration.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\airtable\Table.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\dao\BankOperationsDao.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\vo\BankInfo.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\utils\ErrorObject.java
+C:\Users\user\Desktop\CodingTest\restserver\src\main\resources\com\finahub\coding\server\airtable\AirtableBase.java

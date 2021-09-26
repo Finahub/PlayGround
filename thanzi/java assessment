@@ -1,0 +1,45 @@
+package thanzi.filesearch;
+
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class filesearch {
+	
+	public static void main(String[] args) throws IOException  {
+		// TODO Auto-generated method stub
+		
+		String data = null;
+		String myfile = null;
+		try {
+			System.out.println("enter the file name");
+		      Scanner sc = new Scanner(myfile);
+		      
+		      while (sc.hasNextLine()) {
+		         data = sc.nextLine();
+		      }
+		   sc.close();
+		   System.out.println("enter the word to replace");
+		   Scanner sc1=new Scanner(System.in);
+		   String data1 = sc1.next();
+		   if(data1==data) {
+			   String replacedata=data.replace("was", "#");
+			   FileWriter myWriter = new FileWriter("replaced.txt");
+			   myWriter.write(replacedata);
+			   myWriter.close();
+			   System.out.println("Successfully wrote");
+		   }
+		     
+		  }
+		catch (Exception e) {
+			 System.out.println("An error occurred.");
+		      e.printStackTrace();
+			
+		}
+			}
+		}
+
+	
+	
+

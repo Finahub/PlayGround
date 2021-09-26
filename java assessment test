@@ -1,0 +1,36 @@
+package thanzi.filesearch;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+ 
+
+public class filesearch {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		
+		 
+		       try {
+		            Path path = Paths.get("C:\\Users\\user\\Desktop\\New folder\\test.txt.txt");
+		            Stream <String> lines = Files.lines(path);
+		            List <String> replaced = lines.map(line -> line.replaceAll("was", "#")).collect(Collectors.toList());
+		            Files.write(path, replaced);
+		            lines.close();
+		            System.out.println("Find and Replace done!!!" + replaced);
+
+		            File file = new File("C:\\Users\\user\\Desktop\\New folder\\test1.txt");
+		            Path p = Paths.get("C:\\Users\\user\\Desktop\\New folder\\test1.txt.txt");
+		            Files.write(p, replaced);
+		        } catch (IOException e) {
+		            e.printStackTrace();
+		        }
+
+	}
+
+}

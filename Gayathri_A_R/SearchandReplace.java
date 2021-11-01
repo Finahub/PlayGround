@@ -26,6 +26,7 @@ public class SearchandReplace {
 	}
 
 	public void writeFile(String folderPath, String str) throws IOException {
+		
 		try {
 			FileWriter fw = new FileWriter(folderPath + "\\NewFile.txt");
 			fw.write(str);

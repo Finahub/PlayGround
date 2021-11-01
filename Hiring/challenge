@@ -1,0 +1,51 @@
+package javaa;
+import java.io.*;
+import java.util.Scanner;
+public class challenge {
+
+	public static String findReplaceString(String searchPhrase) {
+		String replacePhrase = "";
+		replacePhrase = searchPhrase.replaceAll("[^\\s]", "#");
+		return replacePhrase;
+
+	}
+
+	public String fileReadingUsingPath(String filePath) {
+		String str = "";
+		StringBuilder strBuilder = new StringBuilder();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(filePath));
+			String strcurrentLine;
+			while((strcurrentLine = br.readLine()) != null){
+
+				strBuilder.append(strcurrentLine).append("\n");
+			}
+			br.close();
+
+		}
+		catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		str = strBuilder.toString();
+		return str;
+	}
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Please enter the path of the file");
+		String filePath = scn.nextLine();
+		System.out.println("Please enter the search Phrase");
+		String searchPhrase = scn.nextLine();
+
+		challenge obj1 = new challenge();
+		String str = obj1.fileReadingUsingPath(filePath);
+
+
+		String replacePhrase = findReplaceString(searchPhrase);
+        System.out.println(str.replace(searchPhrase, replacePhrase));
+
+		scn.close();
+		}
+}
+

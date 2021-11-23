@@ -1,0 +1,16 @@
+public class SearchandReplace{
+   public static void main(String args[]){
+   Scanner in=new Scanner(System.in)
+
+   System.out.println("Enter the word");
+   String word=in.nextString();
+
+      System.out.println("Enter the file path")
+      String filePath=in.nextString();
+
+   File file = new File(filePath.getPath());
+   String content = file.readString(filePath, StandardCharsets.US_ASCII);
+ 
+       System.out.println(content.replace('consectetur adipiscing elit', '########### ########## ####'));
+ }
+}

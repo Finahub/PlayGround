@@ -32,7 +32,7 @@ public class Search {
 			
 				 if (str.contains(searchWord)) {
 					String hash = "#";
-					searchWord.replace(searchWord, hash);
+					//searchWord.replace(searchWord, hash);
 				
 					
 				 BufferedWriter writer = new BufferedWriter(new FileWriter(path));

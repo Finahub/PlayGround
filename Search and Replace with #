@@ -1,0 +1,9 @@
+public static void replaceFileString(String old, String new) throws IOException {
+    String fileName = Settings.getValue("fileDirectory");
+    FileInputStream fis = new FileInputStream(fileName);
+    String content = IOUtils.toString(fis, Charset.defaultCharset());
+    content = content.replaceAll(old, new);
+    FileOutputStream fos = new FileOutputStream(fileName);
+    IOUtils.write(content, new FileOutputStream(fileName), Charset.defaultCharset());
+    fis.close();
+    fos.close();
